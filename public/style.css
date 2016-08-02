@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  padding: 0px;
+/*
+  background: #eeeeee;
+  background-image: url("wallpaper1.jpg");
+*/
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  background-color: #e7dcca;    
+  -webkit-animation: pulse 50s infinite alternate;
+}
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  overflow: auto;
+}
+div.header {
+  width: 100%;
+  height: 250px;
+  background-image: url("cahuilla.jpg");
+  background-size: 100% auto;
+  overflow: auto;
+}
+div#frontleftpanel {
+  width: 225px;
+  overflow: auto;
+  float: left;
+}
+div#frontleftpanel img {
+  width: 100%;
+}
+.container {
+  margin: 0px auto;
+  width: 800px;
+  padding: 0px;
+  border-right: thick solid cadetblue;
+  border-left: thick solid cadetblue;
+  background: lavender;
+  overflow: auto;
+}
+
+a {
+  color: #006666;
+}
+
+h1 {
+text-shadow: 0 1px 0 #999, 0 2px 0 #888, 0 3px 0 #777, 0 4px 0 #666, 0 5px 0 #555, 0 6px 0 #444, 0 7px 0 #333; 
+/*
+, 0 8px 7px #000b21
+*/
+color: cadetblue;
+text-align: center;
+}
+p#title {
+  padding: 0 0 0 0;
+  margin: 10px auto;
+}
+
+/* below animation from https://designshack.net/articles/css/fun-with-pulsing-background-colors-in-css3 */
+/*
+@-webkit-keyframes pulse {
+      0% {background-color: #45CEEF;}
+     25% {background-color: #FFF5A5;}
+     50% {background-color: #FFD4DA;}
+     75% {background-color: #99D2E4;}
+     100% {background-color: #D8CAB4;}
+}
+*/
+@-webkit-keyframes pulse {
+      0% {background-color: #e7dcca;}
+     25% {background-color: #f8c15d;}
+     50% {background-color: #d0cfdd;}
+     75% {background-color: #8cb57d;}
+     100% {background-color: #d3b384;}
+}
