@@ -1,2 +1,4 @@
 var api = require('./')
-api.init()
+//api.init()
+//api.add()
+api.show()
