@@ -8,14 +8,20 @@ exports.init = function () {
 }
 exports.add = function (cb) {
   db.serialize(function() {
-    var stmt = db.prepare("INSERT INTO samples (dateobserved, location) VALUES (?, ?)")
-    stmt.run("jan 1", "derreen")
+    var stmt = db.prepare(`
+      INSERT INTO samples (dateobserved, location) 
+      VALUES ($dateobserved, $location)
+    `)
+    stmt.run({ 
+      $dateobserved : "feb 5",
+      $location : "anza ca"
+    })
     stmt.finalize(cb)
   })
 }
 exports.showall = function (cb){
   db.serialize(function() {
-    db.all("SELECT sampleid, dateobserved, location FROM samples", cb)
+    db.all("SELECT * FROM samples", cb)
   })
   db.close()
 }

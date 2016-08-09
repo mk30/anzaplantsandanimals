@@ -9,3 +9,11 @@ api.add(function (error){
     }
   )
 })
+/*
+  api.showall(
+    function (error, data) {
+      if (error) return console.error('error: ', error)
+      console.log(data)
+    }
+  )
+*/

@@ -2,19 +2,24 @@ body {
   margin: 0px;
   padding: 0px;
   background: #eeeeee;
-  /*
-  background-image: url("wallpaper1.jpg");
-  */
   background: linear-gradient(to top, indigo, white);
-  font-family: monospace;
-  /*
-  background-color: #e7dcca;    
-  -webkit-animation: pulse 50s infinite alternate;
-  */
+  font-family: "courier new";
 }
-.wrapper {
+a {
+  color: #222;
+}
+.topwrapper {
   position: relative;
   margin: 0 auto;
+  overflow: auto;
+}
+.wrapper {
+  margin: 0px auto;
+  max-width: 800px;
+  padding: 0px;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+  background: lavender;
   overflow: auto;
 }
 div.header {
@@ -23,6 +28,21 @@ div.header {
   background-image: url("cahuilla.jpg");
   background-size: 100% auto;
   overflow: auto;
+}
+h1 {
+  color: white;
+  text-align: center;
+  -webkit-animation: h1pulsedark 40s infinite alternate;
+  /*
+  text-shadow: 1px 1px 0px #555, -1px -1px 0px #555,
+  1px -1px 0px #555, -1px 1px 0px #555;
+  */
+  font-family: courier, monospace;
+  font-size: 250%;
+}
+p#title {
+  padding: 0 0 0 0;
+  margin: auto;
 }
 div#frontleftpanel {
   width: 225px;
@@ -33,44 +53,20 @@ div#frontleftpanel img {
   width: 100%;
 }
 div#mainbody {
-  width: 570px;
+  max-width: 570px;
   float: right;
+  margin: auto;
+  /*
   margin: 20px 0px 0px 0px;
+  */
   padding: 10px 0px 0px 0px;
 }
 div#mainbody p {
+  /*
   margin: 20px 20px 20px 20px;
+  */
   padding: 0px 0px 0px 10px;
   color: #222;
-}
-.container {
-  margin: 0px auto;
-  width: 800px;
-  padding: 0px;
-  border-right: 1px solid #222;
-  border-left: 1px solid #222;
-  background: lavender;
-  overflow: auto;
-}
-
-a {
-  color: #222;
-}
-
-h1 {
-  color: white;
-  text-align: center;
-  -webkit-animation: h1pulsedark 40s infinite alternate;
-  /*
-  text-shadow: 1px 1px 0px #555, -1px -1px 0px #555,
-  1px -1px 0px #555, -1px 1px 0px #555;
-  */
-  font-family: monospace;
-  font-size: 250%;
-}
-p#title {
-  padding: 0 0 0 0;
-  margin: 10px auto;
 }
 
 /* below animation from https://designshack.net/articles/css/fun-with-pulsing-background-colors-in-css3 */
